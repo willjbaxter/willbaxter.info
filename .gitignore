@@ -1,0 +1,6 @@
+public/
+.DS_Store
+# Hugo cache
+resources/
+# node modules (if ever used)
+node_modules/ 

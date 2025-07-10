@@ -1,0 +1,12 @@
+baseURL = "https://willbaxter.info/"
+languageCode = "en-us"
+title = "Will Baxter"
+theme = "anatole"
+
+[params]
+author = "Will Baxter"
+description = "Professional and personal development website."
+
+[params.socialIcons]
+  github = "https://github.com/willbaxter"
+  twitter = "https://twitter.com/willbaxter"
