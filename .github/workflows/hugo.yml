@@ -7,6 +7,8 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    env:
+      DART_SASS_EMBEDDED_VERSION: "1.77.5"
     steps:
       - uses: actions/checkout@v4
         with:
@@ -18,6 +20,11 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
+      - name: Install Dart Sass Embedded
+        run: |
+          curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_EMBEDDED_VERSION }}/sass_embedded-${{ env.DART_SASS_EMBEDDED_VERSION }}-linux-x64.tar.gz
+          tar -xzf sass_embedded-${{ env.DART_SASS_EMBEDDED_VERSION }}-linux-x64.tar.gz
+          echo "$PWD/sass_embedded" >> $GITHUB_PATH
       - name: Build
         run: hugo --minify
       - name: Deploy to GitHub Pages
