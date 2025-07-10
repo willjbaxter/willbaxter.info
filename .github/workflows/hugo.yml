@@ -14,11 +14,11 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: 'stable'
-      - name: Setup Dart Sass
+      - name: Install Embedded Dart Sass
         run: |
-          wget -qO dart-sass.tar.gz https://github.com/sass/dart-sass/releases/download/1.69.5/dart-sass-1.69.5-linux-x64.tar.gz
-          tar -xf dart-sass.tar.gz
-          echo "$PWD/dart-sass" >> $GITHUB_PATH
+          curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/1.69.5/sass_embedded-1.69.5-linux-x64.tar.gz
+          tar -xzf sass_embedded-1.69.5-linux-x64.tar.gz
+          echo "$PWD/sass_embedded" >> $GITHUB_PATH
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
