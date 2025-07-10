@@ -16,7 +16,8 @@ jobs:
           go-version: 'stable'
       - name: Install Embedded Dart Sass
         run: |
-          curl -sL https://github.com/sass/dart-sass/releases/download/1.69.5/sass_embedded-1.69.5-linux-x64.tar.gz | tar -xz
+          EMBEDDED_VER="1.77.4"
+          curl -sL https://github.com/sass/dart-sass/releases/download/${EMBEDDED_VER}/sass_embedded-${EMBEDDED_VER}-linux-x64.tar.gz | tar -xz
           echo "$PWD/sass_embedded" >> $GITHUB_PATH
       - uses: peaceiris/actions-hugo@v3
         with:
