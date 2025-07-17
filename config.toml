@@ -6,13 +6,19 @@ theme = "anatole"
 [params]
 author = "Will Baxter"
 description = "Professional and personal development website."
+profilePicture = "/images/main-pic.jpg"
 
 [[params.socialIcons]]
   icon = "fa-brands fa-github"
   title = "GitHub"
-  url = "https://github.com/willbaxter"
+  url = "https://github.com/willjbaxter"
 
 [[params.socialIcons]]
-  icon = "fa-brands fa-twitter"
-  title = "Twitter"
-  url = "https://twitter.com/willbaxter"
+  icon = "fa-brands fa-x-twitter"
+  title = "X"
+  url = "https://x.com/w_baxter96"
+
+[[params.socialIcons]]
+  icon = "fa-brands fa-linkedin"
+  title = "LinkedIn"
+  url = "https://www.linkedin.com/in/will-baxter12/"

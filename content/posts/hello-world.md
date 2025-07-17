@@ -5,3 +5,10 @@ draft: false
 ---
 
 Welcome to my new website powered by Hugo and the Anatole theme. Stay tuned for more content!
+
+## My Catch
+
+<video controls>
+  <source src="/videos/my-catch.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
