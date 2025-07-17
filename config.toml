@@ -6,7 +6,7 @@ theme = "anatole"
 [params]
 author = "Will Baxter"
 description = "Professional and personal development website."
-profilePicture = "/images/main-pic.jpg"
+profilePicture = "/images/main-pic.jpeg"
 
 [[params.socialIcons]]
   icon = "fa-brands fa-github"
@@ -22,3 +22,8 @@ profilePicture = "/images/main-pic.jpg"
   icon = "fa-brands fa-linkedin"
   title = "LinkedIn"
   url = "https://www.linkedin.com/in/will-baxter12/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
