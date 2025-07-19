@@ -3,4 +3,36 @@
 &lt;video controls>
 &lt;source src="https://willbaxter.info/videos/my-catch.mov" type="video/quicktime">
 Your browser does not support the video tag.
-&lt;/video></description></item></channel></rss>
+&lt;/video></description></item><item><title>About</title><link>https://willbaxter.info/about/</link><pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate><guid>https://willbaxter.info/about/</guid><description>&lt;h1 id="about-will-baxter">About Will Baxter&lt;/h1>
+&lt;p>This is where you can add information about yourself, your background, skills, and experience.&lt;/p>
+&lt;h2 id="background">Background&lt;/h2>
+&lt;p>Add your professional background here.&lt;/p>
+&lt;h2 id="skills">Skills&lt;/h2>
+&lt;ul>
+&lt;li>Add your technical skills&lt;/li>
+&lt;li>Programming languages&lt;/li>
+&lt;li>Tools and frameworks&lt;/li>
+&lt;/ul>
+&lt;h2 id="experience">Experience&lt;/h2>
+&lt;p>Detail your work experience and achievements.&lt;/p>
+&lt;h2 id="contact">Contact&lt;/h2>
+&lt;p>Feel free to reach out through any of the social media links above.&lt;/p></description></item><item><title>Other</title><link>https://willbaxter.info/other/</link><pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate><guid>https://willbaxter.info/other/</guid><description>&lt;h1 id="other-projects--interests">Other Projects &amp;amp; Interests&lt;/h1>
+&lt;p>This page can contain:&lt;/p>
+&lt;h2 id="personal-projects">Personal Projects&lt;/h2>
+&lt;ul>
+&lt;li>Side projects&lt;/li>
+&lt;li>Hobby work&lt;/li>
+&lt;li>Open source contributions&lt;/li>
+&lt;/ul>
+&lt;h2 id="interests">Interests&lt;/h2>
+&lt;ul>
+&lt;li>Areas of interest outside of work&lt;/li>
+&lt;li>Hobbies and activities&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>Useful links&lt;/li>
+&lt;li>Tools and resources you recommend&lt;/li>
+&lt;/ul>
+&lt;h2 id="miscellaneous">Miscellaneous&lt;/h2>
+&lt;p>Any other content that doesn&amp;rsquo;t fit in the main categories.&lt;/p></description></item></channel></rss>
