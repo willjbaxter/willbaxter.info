@@ -8,6 +8,6 @@ draft: false
 ## My Catch
 
 <video controls>
-  <source src="/videos/my-catch.mov" type="video/quicktime">
+  <source src="/videos/IMG_4407.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
