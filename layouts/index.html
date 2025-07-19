@@ -2,11 +2,11 @@
 <div class="homepage-content">
     <section id="projects" class="projects-section">
         <h2>Projects</h2>
-        {{ range .Site.Data.projects.projects }}
+        {{ range (where .Site.RegularPages "Section" "projects") }}
         <div class="project-item">
-            <h3>{{ .title }}</h3>
-            <h4>{{ .category }}</h4>
-            <p>{{ .description }}</p>
+            <h3>{{ .Title }}</h3>
+            <h4>{{ .Params.category }}</h4>
+            <p>{{ .Content }}</p>
         </div>
         {{ end }}
     </section>

@@ -18,7 +18,7 @@ profilePicture = "/images/main-pic.jpeg"
   [[menu.main]]
     identifier = "writing"
     name = "Writing"
-    url = "/posts/"
+    url = "/writing/"
     weight = 2
   [[menu.main]]
     identifier = "about"
