@@ -1,0 +1,16 @@
+projects:
+  - title: "Project 1"
+    category: "Web Development"
+    description: "A responsive web application built with React and Next.js"
+    
+  - title: "Project 2"
+    category: "Mobile App"
+    description: "Cross-platform mobile application developed with React Native"
+    
+  - title: "Project 3"
+    category: "Data Visualization"
+    description: "Interactive dashboard for visualizing complex datasets"
+    
+  - title: "Project 4"
+    category: "Machine Learning"
+    description: "Predictive analytics model for customer behavior" 

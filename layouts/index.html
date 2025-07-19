@@ -1,0 +1,72 @@
+{{ define "main" }}
+<div class="homepage-content">
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        {{ range .Site.Data.projects.projects }}
+        <div class="project-item">
+            <h3>{{ .title }}</h3>
+            <h4>{{ .category }}</h4>
+            <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+    </section>
+</div>
+
+<style>
+.homepage-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+
+.project-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.project-item h4 {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.75rem;
+    font-weight: normal;
+}
+
+.project-item p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: #ffffff;
+        --color-text-secondary: #a0a0a0;
+        --color-border: #333;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-text: #333333;
+        --color-text-secondary: #666666;
+        --color-border: #e0e0e0;
+    }
+}
+</style>
+{{ end }} 

@@ -8,6 +8,29 @@ author = "Will Baxter"
 description = "Professional and personal development website."
 profilePicture = "/images/main-pic.jpeg"
 
+# Navigation menu
+[menu]
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "#projects"
+    weight = 1
+  [[menu.main]]
+    identifier = "writing"
+    name = "Writing"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    identifier = "other"
+    name = "Other"
+    url = "/other/"
+    weight = 4
+
 [[params.socialIcons]]
   icon = "fa-brands fa-github"
   title = "GitHub"
