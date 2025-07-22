@@ -5,12 +5,15 @@
         {{ range (where .Site.RegularPages "Section" "projects") }}
         <div class="project-item">
             {{ if .Params.external_url }}
-            <h3><a href="{{ .Params.external_url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></h3>
+            <h3 class="project-title"><a href="{{ .Params.external_url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></h3>
             {{ else }}
-            <h3>{{ .Title }}</h3>
+            <h3 class="project-title">{{ .Title }}</h3>
             {{ end }}
-            <h4>{{ .Params.category }}</h4>
-            <p>{{ .Content }}</p>
+            <h4 class="project-category">{{ .Params.category }}</h4>
+            <p class="project-description">{{ .Content }}</p>
+            {{ if .Params.tech_stack }}
+            <p class="project-tech-stack"><strong>Tech Stack:</strong> {{ .Params.tech_stack }}</p>
+            {{ end }}
         </div>
         {{ end }}
     </section>
@@ -30,8 +33,8 @@
 }
 
 .project-item {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -39,46 +42,83 @@
     border-bottom: none;
 }
 
-.project-item h3 {
-    font-size: 1.25rem;
+.project-title {
+    font-size: 1.75rem;
+    font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--color-text);
+    line-height: 1.2;
 }
 
-.project-item h3 a {
+.project-title a {
     color: var(--color-text);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-.project-item h3 a:hover {
+.project-title a:hover {
+    color: var(--color-link-hover);
     text-decoration: underline;
 }
 
-.project-item h4 {
-    font-size: 1rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 0.75rem;
-    font-weight: normal;
+.project-category {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.project-item p {
+.project-description {
     color: var(--color-text-secondary);
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-tech-stack {
+    color: var(--color-text-tertiary);
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    font-style: italic;
+}
+
+.project-tech-stack strong {
+    color: var(--color-text-secondary);
+    font-style: normal;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --color-text: #ffffff;
-        --color-text-secondary: #a0a0a0;
+        --color-text-secondary: #b3b3b3;
+        --color-text-tertiary: #888888;
         --color-border: #333;
+        --color-accent: #64b5f6;
+        --color-link-hover: #81c784;
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --color-text: #333333;
-        --color-text-secondary: #666666;
+        --color-text: #1a1a1a;
+        --color-text-secondary: #4a4a4a;
+        --color-text-tertiary: #666666;
         --color-border: #e0e0e0;
+        --color-accent: #1976d2;
+        --color-link-hover: #388e3c;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 1.5rem;
+    }
+    
+    .project-description {
+        font-size: 0.95rem;
     }
 }
 </style>
