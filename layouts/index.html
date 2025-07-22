@@ -4,7 +4,11 @@
         <h2>Projects</h2>
         {{ range (where .Site.RegularPages "Section" "projects") }}
         <div class="project-item">
+            {{ if .Params.url }}
+            <h3><a href="{{ .Params.url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></h3>
+            {{ else }}
             <h3>{{ .Title }}</h3>
+            {{ end }}
             <h4>{{ .Params.category }}</h4>
             <p>{{ .Content }}</p>
         </div>
@@ -39,6 +43,15 @@
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
     color: var(--color-text);
+}
+
+.project-item h3 a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.project-item h3 a:hover {
+    text-decoration: underline;
 }
 
 .project-item h4 {
