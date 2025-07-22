@@ -4,8 +4,8 @@
         <h2>Projects</h2>
         {{ range (where .Site.RegularPages "Section" "projects") }}
         <div class="project-item">
-            {{ if .Params.url }}
-            <h3><a href="{{ .Params.url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></h3>
+            {{ if .Params.external_url }}
+            <h3><a href="{{ .Params.external_url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></h3>
             {{ else }}
             <h3>{{ .Title }}</h3>
             {{ end }}
