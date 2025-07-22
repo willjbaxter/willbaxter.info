@@ -1,7 +1,6 @@
 {{ define "main" }}
 <div class="homepage-content">
     <section id="projects" class="projects-section">
-        <h2>Projects</h2>
         {{ range (where .Site.RegularPages "Section" "projects") }}
         <div class="project-item">
             {{ if .Params.external_url }}
@@ -9,11 +8,7 @@
             {{ else }}
             <h3 class="project-title">{{ .Title }}</h3>
             {{ end }}
-            <h4 class="project-category">{{ .Params.category }}</h4>
             <p class="project-description">{{ .Content }}</p>
-            {{ if .Params.tech_stack }}
-            <p class="project-tech-stack"><strong>Tech Stack:</strong> {{ .Params.tech_stack }}</p>
-            {{ end }}
         </div>
         {{ end }}
     </section>
@@ -24,12 +19,6 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-}
-
-.projects-section h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--color-text);
 }
 
 .project-item {
@@ -43,9 +32,9 @@
 }
 
 .project-title {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: var(--color-text);
     line-height: 1.2;
 }
@@ -61,42 +50,17 @@
     text-decoration: underline;
 }
 
-.project-category {
-    font-size: 0.9rem;
-    color: var(--color-accent);
-    margin-bottom: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
 .project-description {
     color: var(--color-text-secondary);
-    line-height: 1.7;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.project-tech-stack {
-    color: var(--color-text-tertiary);
-    font-size: 0.85rem;
-    margin-top: 1rem;
-    padding: 0.5rem 0;
-    font-style: italic;
-}
-
-.project-tech-stack strong {
-    color: var(--color-text-secondary);
-    font-style: normal;
+    line-height: 1.6;
+    font-size: 0.9rem;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --color-text: #ffffff;
         --color-text-secondary: #b3b3b3;
-        --color-text-tertiary: #888888;
         --color-border: #333;
-        --color-accent: #64b5f6;
         --color-link-hover: #81c784;
     }
 }
@@ -105,20 +69,18 @@
     :root {
         --color-text: #1a1a1a;
         --color-text-secondary: #4a4a4a;
-        --color-text-tertiary: #666666;
         --color-border: #e0e0e0;
-        --color-accent: #1976d2;
         --color-link-hover: #388e3c;
     }
 }
 
 @media (max-width: 768px) {
     .project-title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     
     .project-description {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
     }
 }
 </style>
