@@ -1,0 +1,37 @@
+{{ define "main" }}
+<style>
+.catch-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.catch-title {
+  flex: 1;
+  min-width: 150px;
+}
+.catch-video {
+  flex: 2;
+  min-width: 300px;
+}
+.catch-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+</style>
+<div class="post">
+    <div class="catch-container">
+        <div class="catch-title">
+            <h1 class="post-title">{{ .Title | markdownify }}</h1>
+        </div>
+        <div class="catch-video">
+            {{ .Content }}
+        </div>
+    </div>
+    <div class="post-meta" style="margin-top: 2rem;">
+      {{- partial "post/meta.html" . -}}
+    </div>
+</div>
+{{ end }} 
