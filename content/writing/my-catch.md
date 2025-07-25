@@ -1,7 +1,8 @@
 ---
-title: "My catch"
+title: "My Catch"
 date: 2025-06-18T00:00:00Z
 draft: false
+layout: writing/catch_page
 ---
 
 <video controls style="width: 100%; max-width: 480px; height: auto; display: block; margin: auto;">
