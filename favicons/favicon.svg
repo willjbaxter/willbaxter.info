@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" width="120" height="100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
   <style>
     .text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 700;
+      font-weight: bold;
       font-size: 80px;
     }
   </style>
   <text x="0" y="75" class="text" fill="#4285F4">W</text>
-  <text x="70" y="75" class="text" fill="#FBBC05">B</text>
+  <text x="45" y="75" class="text" fill="#FBBC05">B</text>
 </svg> 
