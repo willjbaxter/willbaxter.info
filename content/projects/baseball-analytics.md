@@ -5,4 +5,4 @@ draft: false
 external_url: "https://baseball.willbaxter.info/"
 ---
 
-Personal baseball analytics from games I've attended with Statcast data visualization. Features 29 games, interactive barrel maps, WPA analysis, and longest home run tracking with data-driven insights into my ballpark experiences.
+Lifetime logging and analytics from my time as a Red Sox fan. Data sourced from MLB Ballpark app (est 2021) and manual import from scorecards I've kept from over the years.
