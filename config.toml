@@ -46,6 +46,10 @@ profilePicture = "/images/main-pic.jpeg"
   title = "LinkedIn"
   url = "https://www.linkedin.com/in/will-baxter12/"
 
+[outputFormats]
+  [outputFormats.RSS]
+    disabled = true
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
